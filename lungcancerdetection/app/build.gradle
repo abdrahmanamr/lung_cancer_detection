@@ -1,0 +1,48 @@
+plugins {
+    alias(libs.plugins.android.application)
+}
+
+android {
+    namespace 'mystery.anonymous.lungcancerdetection'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "mystery.anonymous.lungcancerdetection"
+        minSdk 24
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    packaging {
+        jniLibs {
+            useLegacyPackaging true
+        }
+    }
+    androidResources {
+        noCompress 'tflite'
+    }
+}
+
+dependencies {
+    implementation libs.androidx.appcompat.v161
+    implementation libs.material.v1100
+    implementation libs.tensorflow.lite
+
+    implementation libs.okhttp
+    implementation libs.androidx.exifinterface
+    implementation libs.androidx.navigation.fragment
+    implementation libs.androidx.navigation.ui
+}

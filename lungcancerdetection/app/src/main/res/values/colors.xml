@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ألوان أساسية -->
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="primaryColor">#1565C0</color>         <!-- أزرق هادئ -->
+    <color name="primaryDark">#003c8f</color>
+    <color name="accentColor">#FF5722</color>          <!-- برتقالي دافئ -->
+
+    <!-- ألوان للخلفيات المتدرجة -->
+    <color name="gradientStart">#E3F2FD</color>        <!-- أزرق فاتح -->
+    <color name="gradientEnd">#BBDEFB</color>          <!-- أزرق سماوي -->
+
+    <!-- ألوان للنتائج -->
+    <color name="resultSuccess">#4CAF50</color>        <!-- أخضر للنتائج الجيدة -->
+    <color name="resultDanger">#F44336</color>         <!-- أحمر للنتائج الخطيرة -->
+</resources>
